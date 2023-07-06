@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 8px;
+  background-color: inherit;
+  text-align: center;
+}
+
+.popup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding: 1.5em;
+}
+
+  input {
+    padding: 0.5em;
+    border-radius: 4px;
+    border: rgb(49, 49, 240) 1px solid;
+  }
+
+  button {
+    all: unset;
+    padding: 0.5em;
+    border-radius: 4px;
+    background-color: rgb(218, 218, 219);
+    border: rgb(199, 199, 201) 1px solid;
+    cursor: pointer;
+    
+  }
+
+  button:hover, button:focus, button:active {
+    background-color: rgb(199, 199, 201);
+  }

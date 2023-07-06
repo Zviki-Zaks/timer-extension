@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Timer Extension",
+  "version": "0.1.0",
+  "description": "In this extension, users can define a time when they want to use a website, after which they are redirected to another page.",
+  "icons": {
+    "128": "images/timer_icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "images/timer_icon128.png"
+    }
+  },
+  "permissions": ["storage", "tabs"],
+  "minimum_chrome_version": "102",
+  "web_accessible_resources": [
+    {
+      "resources": ["images/timer_icon128.png", "popup.html", "popup.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
